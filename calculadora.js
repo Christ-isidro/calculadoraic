@@ -6,5 +6,17 @@ function restar(a, b) {
     return a - b;
 }
 
+function multiplicar(a, b) {
+    return a * b;
+}
 
-module.exports = { sumar, restar };   
+function dividir(a, b) {
+    return a / b;
+}
+
+function raiz(c) {
+    return Math.sqrt(c);
+}
+
+
+module.exports = { sumar, restar, multiplicar, dividir, raiz };   

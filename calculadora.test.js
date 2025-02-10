@@ -1,4 +1,6 @@
 const { sumar, restar, multiplicar, dividir, raiz } = require('./calculadora');
+global.window = {};
+require('./calculadora');
 
 test('Suma 2 + 3 y devuelve 5', () => {
     expect(sumar(2, 3)).toBe(5);

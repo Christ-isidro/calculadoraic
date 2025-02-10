@@ -8,7 +8,4 @@ function dividir(a, b) { if (b === 0) { throw new Error("No se puede dividir por
 
 // Hacer las funciones accesibles en el navegador 
 
-window.suma = suma;
-window.resta = resta;
-window.multiplicar = multiplicar;
-window.dividir = dividir;
+module.exports = { suma, resta, multiplicar, dividir };

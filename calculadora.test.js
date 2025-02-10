@@ -1,25 +1,25 @@
-const { sumar, restar, multiplicar, dividir, raiz } = require('./calculadora');
+const { suma, resta, multiplicar, dividir, raiz } = require('./calculadora');
 global.window = {};
 require('./calculadora');
 
 test('Suma 2 + 3 y devuelve 5', () => {
-    expect(sumar(2, 3)).toBe(5);
+    expect(suma(2, 3)).toBe(5);
 });
 
 test('Suma 77 + 33  devuelve 110', () => {
-    expect(sumar(77, 33)).toBe(110);
+    expect(suma(77, 33)).toBe(110);
 });
 
 test('Suma -25 + 50 y devuelve 25', () => {
-    expect(sumar(-25, 50)).toBe(25);
+    expect(suma(-25, 50)).toBe(25);
 });
 
 test('Resta 5 - 3 y devuelve 2', () => {
-    expect(restar(5, 3)).toBe(2);
+    expect(resta(5, 3)).toBe(2);
 });
 
 test('Resta 9 - 18 y devuelve -9', () => {
-    expect(restar(9, 18)).toBe(-9);
+    expect(resta(9, 18)).toBe(-9);
 });
 
 test('Multiplica 3 * 2 y devuelve 6', () => {

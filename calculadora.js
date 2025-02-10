@@ -9,4 +9,4 @@ function dividir(a, b) { if (b === 0) { throw new Error("No se puede dividir por
 function raiz(a) { return Math.sqrt(a); }
 // Hacer las funciones accesibles en el navegador 
 
-export default { suma, resta, multiplicar, dividir, raiz };
+module.exports = { suma, resta, multiplicar, dividir, raiz };
